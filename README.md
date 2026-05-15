@@ -47,3 +47,5 @@ IC22 (TPS74801DRCT) is a 0.8 V to 3.6 V, 1.5 A low-dropout linear regulator prod
 IC24 (TPS51200DRCT) is a DDR termination regulator generating the VTT_DDR4-PS rail (37 pins) at half the DDR4 VDDQ voltage, providing the mid-point termination voltage for the PS-side DDR4 interface.
 
 IC12 (REF5030AID) is a 3 V precision voltage reference providing a stable reference for the DAC subsystem (IC10, DAC8562SDSC).
+
+See the link for the PCB Design Review as there are a couple of power-supply marginal choices such as bootstrap cap C270 is marginal, on the lower end of the requirement at 220nf and LMZ31704 delivers 4A maximum and quiescent current of FPGA and logic comes in around 3A.  
