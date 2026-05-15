@@ -10,10 +10,11 @@ the FPGA can put the DDR into test mode and perform interconnect tests at relati
 boundary-scan can turn-off on-chip DDR4 DLL/PLLs and slow speed write and read to the DDR4, just it is more timing
 dependent and diagnostics when control lines are stuck is harder than when using TEN.
 
-The Tomachie score is low, 60 out of 100 but that is mostly due to less attention to volume manufacturing issues and DFT 
-practices.  The biggest design issue is that the design intent is not properly captured where the schematic shows SFP+ 
-connector shells going to logic GND.  and they should be seperated to CHassis GND and then connected with zero ohm resistor
-or inductor/cap network.    The layout is probably managing the cage shields properly but leaving direction out of the
+The report score is low, 60 out of 100 but that is mostly due to less attention to volume manufacturing issues and DFT 
+practices, and a few other issues in schematic quality.
+The biggest design issue is that the design intent is not properly captured where the schematic shows SFP+ 
+connector shells going to logic GND.  and they should be seperated to Chassis GND and then connected with zero ohm resistor
+or inductor/cap network.    The layout is probably managing the cage shields properly but leaving the intent out of the
 schematic and using side channels to communicate design intent is not good practice.
 There are a few flaws such as impedance path gaps, which can affect layout or automated layou so controlled impedance
 gaps can be a problem depending on who is doing the layout.  There are a few places (see report) where the AC coupling of caps
