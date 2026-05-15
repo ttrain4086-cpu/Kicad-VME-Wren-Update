@@ -21,7 +21,7 @@ gaps can be a problem depending on who is doing the layout.  There are a few pla
 are marginal for PCIe.
 
 The full PCB Design Review is here:
-https://tomachie.com/r/324131b6-a699-45a8-ac61-7f713f6410b7/vme-wren_report.html
+https://tomachie.com/r/324131b6-a699-45a8-ac61-7f713f6410b7/vme-wren_report.html?GH
 
 A representitive description is here below:     The VME-WREN is a VME64x-format FPGA processing board built around a Zynq UltraScale+ MPSoC (IC14, XCZU4CG-1SFVC784E). The design is a hierarchical schematic spanning 73 sheets with 1580 components, 8220 pins, and 1337 nets. The board receives power from the VME backplane via P12V and P5V_VME rails and generates all local supply voltages on-board. It provides extensive I/O buffering for VME bus transactions, high-speed serial links via SFP+ and Mini-SAS HD connectors, a PS-side DDR4 memory subsystem, dual QSPI flash for configuration storage, USB debug access, precision clocking, and a DAC output channel. The board is intended for data acquisition, processing, or I/O control applications in a VME crate environment.
 
